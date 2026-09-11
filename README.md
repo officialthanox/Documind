@@ -94,9 +94,9 @@ The system is deliberately small: five Python modules, each with one job, wired 
 
 **3. Live application walkthrough**
 
-<video src="https://github.com/officialthanox/Documind/raw/main/Demo/Video%20Project.mp4" controls width="100%"></video>
+[![Watch the demo](Demo/01_end_to_end_pipeline.gif)](https://raw.githubusercontent.com/officialthanox/Documind/main/Demo/Video%20Project.mp4)
 
-*(If the video doesn't render inline on your platform, [open it directly](Demo/documind_live_demo.webm).)*
+*(Click the image above to play the full video)*
 
 ---
 
@@ -256,7 +256,5 @@ Then open **http://localhost:8501** — upload a PDF or TXT file and ask it a qu
 ---
 
 <div align="center">
-
-
 
 </div>
