@@ -92,7 +92,7 @@ The system is deliberately small: five Python modules, each with one job, wired 
 
 **3. Live application walkthrough**
 
-<video src="Demo/Video Project.mp4" controls width="100%"></video>
+![Live application walkthrough](Demo/Video_Project.gif)
 
 *(If the video doesn't render inline on your platform, [open it directly](Demo/documind_live_demo.webm).)*
 
