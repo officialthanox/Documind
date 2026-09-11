@@ -46,7 +46,7 @@ Documind/
 ├── Demo/
 │   ├── 01_end_to_end_pipeline.gif
 │   ├── documind_architecture_showcase.gif
-│   └── documind_live_demo.webm
+│   └── Video Project.mp4
 ├── data/                           # runtime-only: chroma index, uploads, audit log (git-ignored)
 ├── .env.example
 ├── .gitignore
@@ -92,7 +92,7 @@ The system is deliberately small: five Python modules, each with one job, wired 
 
 **3. Live application walkthrough**
 
-<video src="Demo/documind_live_demo.webm" controls width="100%"></video>
+<video src="Demo/Video Project.mp4" controls width="100%"></video>
 
 *(If the video doesn't render inline on your platform, [open it directly](Demo/documind_live_demo.webm).)*
 
