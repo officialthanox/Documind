@@ -1,0 +1,20 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Runtime data (regenerated when the app runs)
+data/chroma/
+data/uploads/
+data/audit_log.json
+
+# OS junk
+.DS_Store
+Thumbs.db
