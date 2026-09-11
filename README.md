@@ -92,9 +92,7 @@ The system is deliberately small: five Python modules, each with one job, wired 
 
 **3. Live application walkthrough**
 
-**3. Live application walkthrough**
-
-[![Watch the demo](Demo/01_end_to_end_pipeline.gif)](https://raw.githubusercontent.com/officialthanox/Documind/main/Demo/Video%20Project.mp4)
+[![Watch the demo](Demo/01_end_to_end_pipeline.gif)](Demo/Video%20Project.mp4)
 
 *(Click the image above to play the full video)*
 
