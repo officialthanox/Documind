@@ -1,6 +1,53 @@
 <a id="top"></a>
 
+<a id="about-the-creator"></a>
 <div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A5ACD,100:F55036&height=210&section=header&text=Hi%2C%20I'm%20Thanojan%20%F0%9F%91%8B&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=40" width="100%"/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6A5ACD,100:F55036&height=4&section=header&animation=fadeIn" width="55%"/>
+
+<br/>
+
+<img src="https://github.com/officialthanox/Documind/blob/main/Profile.jpg.jpeg?raw=true" width="190" alt="Thanojan Sivasuntharam"/>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:F55036,100:6A5ACD&height=4&section=header&animation=fadeIn" width="55%"/>
+
+<br/>
+
+### **Thanojan Sivasuntharam**
+
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=6A5ACD&center=true&vCenter=true&width=680&lines=Aspiring+AI+%2F+ML+Engineer;RAG+Systems+%C2%B7+LLM+Applications+%C2%B7+Applied+ML;Building+AI+systems+designed+to+be+trusted." alt="Typing SVG"/>
+
+🎓 Final-year BSc (Hons) Computer Science with Artificial Intelligence
+🏫 NIBM Sri Lanka · Coventry University (UK) Affiliate
+📍 Based in Jaffna, Sri Lanka 🇱🇰
+
+<br/>
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:officialthanox@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nevin-thanox)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/officialthanox/Documind)
+
+[![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-success?style=for-the-badge)](mailto:officialthanox@gmail.com)
+
+</div>
+
+<br/>
+
+I build AI systems designed to be **trusted**, not just demoed. Every project I ship is source-traceable, every confidence score is computed math instead of model guesswork, and every failure mode is handled **on purpose, not by accident.**
+
+> 📝 **Short version, if you're skimming:** the project below — **DocuMind** — was designed and built **end-to-end, solo**: retrieval pipeline, grounding logic, audit trail, and container deployment. **Read it as the interview.**
+
+<div align="right"><a href="#top">⬆️ back to top</a></div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:F55036,100:6A5ACD&height=3&section=header" width="100%"/>
+
+<div align="center">
+
+### 🚀 FEATURED PROJECT
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F55036,100:6A5ACD&height=220&section=header&text=DocuMind&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Retrieval-Augmented%20Document%20Intelligence%20Agent&descAlignY=55&descSize=20&descColor=ffffff" width="100%"/>
 
@@ -15,7 +62,7 @@
 [![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#-tech-stack)
 
 [![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)](#)
-[![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-000000?style=for-the-badge)](#-about-the-creator)
+[![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-000000?style=for-the-badge)](#about-the-creator)
 
 [![Stars](https://img.shields.io/github/stars/officialthanox/Documind?style=for-the-badge&logo=github&color=FFD700&labelColor=1a1a1a)](https://github.com/officialthanox/Documind/stargazers)
 [![Forks](https://img.shields.io/github/forks/officialthanox/Documind?style=for-the-badge&logo=github&color=87CEEB&labelColor=1a1a1a)](https://github.com/officialthanox/Documind/network/members)
@@ -46,30 +93,6 @@
 | 🧩 [The Problem It Solves](#the-problem) | 📬 [Contact](#contact) |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F55036,100:6A5ACD&height=3&section=header" width="100%"/>
-
-<a id="about-the-creator"></a>
-## 👋 About the Creator
-
-<div align="center">
-<img src="https://github.com/officialthanox/Documind/blob/main/Profile.jpg.jpeg?raw=true" width="160" alt="Thanojan Sivasuntharam"/>
-
-### Thanojan Sivasuntharam
-**Final-year BSc (Hons) Computer Science with Artificial Intelligence**
-NIBM Sri Lanka · Coventry University (UK) Affiliate · Based in Jaffna, Sri Lanka 🇱🇰
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:officialthanox@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nevin-thanox)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/officialthanox/Documind)
-
-</div>
-
-I build AI systems designed to be **trusted**, not just demoed. DocuMind is that principle in code: every answer is source-traceable, every confidence score is computed math instead of model guesswork, and every failure mode — a missing API key, an unanswerable question, a bad upload — is handled **on purpose, not by accident.**
-
-> 📝 **Short version, if you're skimming:** I designed and built this end-to-end, **solo** — retrieval pipeline, grounding logic, audit trail, and container deployment. This README is my portfolio; **read it as the interview.**
-
-🎯 **Currently seeking:** AI Engineering internships — RAG systems, LLM applications, applied ML.
-
-<div align="right"><a href="#top">⬆️ back to top</a></div>
 
 <a id="at-a-glance"></a>
 ## ⚡ At a Glance
@@ -354,16 +377,13 @@ Then open **http://localhost:8501** — upload a PDF or TXT file and ask it a qu
 
 <div align="center">
 
-### Thanojan Sivasuntharam
-**Aspiring AI Engineer · RAG & LLM Systems**
+**Let's connect — always happy to talk AI, RAG systems, or internship opportunities.**
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:officialthanox@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nevin-thanox)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/officialthanox/Documind)
 
 ⭐ **If DocuMind was useful or interesting, consider starring the repo — it genuinely helps.**
-
-<br/>
 
 *Trust here is architectural, not cosmetic.*
 
