@@ -23,7 +23,7 @@
 ---
 
 ## About the Creator
-
+![Profile Photo](https://github.com/officialthanox/Documind/blob/main/Profile.jpg.jpeg?raw=true)
 **Thanojan Sivasuntharam** — Final-year BSc (Hons) Computer Science with Artificial Intelligence student, NIBM Sri Lanka (Coventry University, UK affiliate), based in Jaffna, Sri Lanka.
 
 I build AI systems designed to be *trusted*, not just demoed. DocuMind is that principle in code: every answer is source-traceable, every confidence score is computed math instead of model guesswork, and every failure mode — a missing API key, an unanswerable question, a bad upload — is handled on purpose, not by accident.
