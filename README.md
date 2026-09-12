@@ -22,8 +22,10 @@
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=6A5ACD&center=true&vCenter=true&width=680&lines=Aspiring+AI+%2F+ML+Engineer;RAG+Systems+%C2%B7+LLM+Applications+%C2%B7+Applied+ML;Building+AI+systems+designed+to+be+trusted." alt="Typing SVG"/>
 
 🎓 Final-year BSc (Hons) Computer Science with Artificial Intelligence
+<br/>
 🏫 NIBM Sri Lanka · Coventry University (UK) Affiliate
-📍 Based in Jaffna, Sri Lanka 🇱🇰
+<br/>
+📍 Based in Jaffna, Sri Lanka
 
 <br/>
 
