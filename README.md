@@ -1,144 +1,3 @@
-<div align="center">
-
-# 🧠 DocuMind
-### Retrieval-Augmented Document Intelligence Agent
-
-*Upload a document. Ask a question. Get an answer that's grounded in the source — never invented.*
-
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.38-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-6A5ACD?style=flat-square)
-![Groq](https://img.shields.io/badge/LLM%20Inference-Groq-F55036?style=flat-square)
-![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=flat-square)
-
-</div>
-
-> *"An AI system's real value isn't in how confidently it answers — it's in how honestly it admits what it doesn't know."*
-> — Engineering principle behind DocuMind's grounding strategy
-
----
-
-## Quick Summary
-
-- **Retrieval-grounded Q&A** — every answer is generated exclusively from the uploaded document's content; the LLM is contractually instructed to refuse when the answer isn't present.
-- **Transparent trust signal** — a confidence score is *computed* from vector-distance math, not guessed by the model, so users know how strong the retrieval match actually was.
-- **Full source traceability** — every answer names the exact source file it came from, and every Q&A pair is persisted to an auditable log.
-- **Lean, intentional codebase** — the entire retrieval-augmented-generation pipeline runs in **209 lines of Python across 5 single-responsibility modules**.
-- **Container-first delivery** — one `docker compose up` away from running, with secrets isolated to environment variables.
-
----
-
-## Repository Structure
-
-```
-Documind/
-├── .streamlit/
-│   └── config.toml                 # UI theme (colors, font)
-├── backend/
-│   ├── __init__.py
-│   ├── config.py                   # env vars, cached resources (embedder, vector DB, LLM client)
-│   ├── rag.py                      # ingest → chunk → embed → retrieve
-│   ├── llm.py                      # prompt construction + grounded generation
-│   └── audit.py                    # Q&A history: save / list / clear
-├── frontend/
-│   └── app.py                      # Streamlit chat UI (upload, chat, avatars, metrics)
-├── Demo/
-│   ├── 01_end_to_end_pipeline.gif
-│   ├── documind_architecture_showcase.gif
-│   └── Video Project.mp4
-├── data/                           # runtime-only: chroma index, uploads, audit log (git-ignored)
-├── .env.example
-├── .gitignore
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [See It In Action](#see-it-in-action)
-- [The Problem It Solves](#the-problem-it-solves)
-- [Architecture](#architecture)
-- [Engineering Decisions](#engineering-decisions)
-- [Skills and Competencies Demonstrated](#skills-and-competencies-demonstrated)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Scaling to Production](#scaling-to-production)
-
----
-
-## Overview
-
-DocuMind is a **Retrieval-Augmented Generation (RAG) agent**: a document is ingested, split into overlapping text chunks, embedded into vectors, and indexed in a local vector store. When a user asks a question, the system retrieves the most semantically relevant chunks, assembles them into a bounded context window, and hands that context — and only that context — to an LLM for answer generation. Every answer carries a computed confidence score and a named source, and every exchange is written to a persistent audit trail.
-
-The system is deliberately small: five Python modules, each with one job, wired together through a Streamlit chat interface.
-
----
-
-## See It In Action
-
-**1. End-to-end pipeline**
-
-![End-to-end pipeline demo](Demo/01_end_to_end_pipeline.gif)
-
-**2. Architecture showcase**
-
-![Architecture showcase](Demo/documind_architecture_showcase.gif)
-
-**3. Live application walkthrough**
-
-
-https://github.com/user-attachments/assets/b0ce97c9-fa77-463f-a326-c2f40d5645f9
-
-
-*(Click the image above to play the full video)*
----
-
-## The Problem It Solves
-
-| Without This Workflow | With DocuMind |
-|---|---|
-| Manually skim a PDF/TXT to find an answer | Ask in plain English, get a direct answer |
-| No way to verify an AI's claim against the source document | Every answer cites the exact source file it was pulled from |
-| Generic LLM answers can drift from — or invent beyond — the document | The prompt contract restricts generation to retrieved context only, and the model is instructed to say so when context is insufficient |
-| No sense of how "sure" an answer is | A numeric confidence score, derived from vector-similarity distance, is shown on every answer |
-| No record of what was asked or answered | Every Q&A pair is persisted to an audit log, reviewable or clearable on demand |
-
----
-
-## Architecture
-
-**Pipeline flow:**
-
-```
-Upload (PDF/TXT)
-   │
-   ▼
-Text Extraction (pypdf for PDFs)
-   │
-   ▼
-Chunking (800 chars, 120-char overlap)
-   │
-   ▼
-Embedding (fastembed · BAAI/bge-small-en-v1.5)
-   │
-   ▼
-Vector Store (ChromaDB, persistent local collection)
-   │
-   ▼
-Query → Embed → Similarity Search (top-6) → Confidence Score
-   │
-   ▼
-Context Assembly → Groq LLM (openai/gpt-oss-120b)
-   │
-   ▼
-Grounded Answer + Source + Confidence → Audit Log (JSON)
-```
 
 ---
 
@@ -157,20 +16,28 @@ Grounded Answer + Source + Confidence → Audit Log (JSON)
 
 ## Skills and Competencies Demonstrated
 
-**AI / Machine Learning Engineering**
+**AI/ML Engineering**
 - Retrieval-Augmented Generation (RAG) pipeline design end-to-end
 - Text chunking strategy with overlap tuning for retrieval quality
-- Embedding model integration (`fastembed`, `BAAI/bge-small-en-v1.5`)
 - Vector similarity search and distance-based confidence scoring
 - Prompt engineering with explicit grounding constraints to reduce hallucination
+- Retrieval routing (guardrail logic for aggregate-style queries)
+
+**LLM & APIs**
+- Groq API integration (`openai/gpt-oss-120b`)
+- Prompt-contract design for grounded, hallucination-resistant generation
 
 **Backend Engineering**
 - Modular, single-responsibility architecture (5 focused modules, zero monolith)
-- Environment-driven configuration and secret management
-- Persistent local audit logging (JSON-based event trail)
+- Environment-driven configuration and secrets management
 - Defensive error handling around third-party API calls
 
-**Frontend / Product Engineering**
+**Data & Storage**
+- ChromaDB (persistent local vector store)
+- pypdf (PDF text extraction)
+- JSON-based audit trail persistence
+
+**Frontend / Product**
 - Real-time chat UI built in Streamlit (session state, avatars, live toasts)
 - UX-conscious feedback design (contextual first-run message, confidence badges, progressive disclosure)
 
@@ -180,7 +47,8 @@ Grounded Answer + Source + Confidence → Audit Log (JSON)
 - Clean separation of runtime artifacts from source control via `.gitignore`
 
 **Methodology**
-DocuMind was built around one constraint: *constrain the model before you trust it.* Rather than relying on a large general-purpose assistant to "figure it out," every architectural choice — chunk size, retrieval routing, prompt contract, confidence computation — exists to narrow the system's behavior into something predictable, auditable, and explainable. This is the difference between a demo that *feels* smart and a system a business can actually rely on: concrete engineering guardrails, not model size, are what make an AI feature trustworthy in production.
+
+DocuMind was built around one constraint: *constrain the model before you trust it.* Rather than relying on a large general-purpose assistant to "figure it out," every architectural choice — chunk size, retrieval routing, prompt contract, confidence computation — exists to narrow the system's behavior into something predictable, auditable, and explainable. This is the difference between a demo that feels smart and a system a business can actually rely on: concrete engineering guardrails, not model size, are what make an AI feature trustworthy in production.
 
 ---
 
@@ -254,6 +122,15 @@ Then open **http://localhost:8501** — upload a PDF or TXT file and ask it a qu
 
 ---
 
+## Author
+
+**Thanojan Sivasuntharam**
+Aspiring AI Engineer · RAG & LLM Systems
+
+📧 [officialthanox@gmail.com](mailto:officialthanox@gmail.com) · 🔗 [LinkedIn](https://linkedin.com/in/nevin-thanox) · 💻 [GitHub](https://github.com/officialthanox/Documind)
+
 <div align="center">
+
+*Trust here is architectural, not cosmetic.*
 
 </div>
