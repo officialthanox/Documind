@@ -66,10 +66,6 @@ I build AI systems designed to be **trusted**, not just demoed. Every project I 
 [![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)](#)
 [![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-000000?style=for-the-badge)](#about-the-creator)
 
-[![Stars](https://img.shields.io/github/stars/officialthanox/Documind?style=for-the-badge&logo=github&color=FFD700&labelColor=1a1a1a)](https://github.com/officialthanox/Documind/stargazers)
-[![Forks](https://img.shields.io/github/forks/officialthanox/Documind?style=for-the-badge&logo=github&color=87CEEB&labelColor=1a1a1a)](https://github.com/officialthanox/Documind/network/members)
-[![Last Commit](https://img.shields.io/github/last-commit/officialthanox/Documind?style=for-the-badge&color=success&labelColor=1a1a1a)](https://github.com/officialthanox/Documind/commits/main)
-
 ### **[▶️ Watch the Full Demo on YouTube](https://youtu.be/kKCgGaGkbi4)**
 
 </div>
