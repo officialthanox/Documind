@@ -1,52 +1,5 @@
 <a id="top"></a>
 
-<a id="about-the-creator"></a>
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A5ACD,100:F55036&height=210&section=header&text=Hi%2C%20I'm%20Thanojan%20%F0%9F%91%8B&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=40" width="100%"/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6A5ACD,100:F55036&height=4&section=header&animation=fadeIn" width="55%"/>
-
-<br/>
-
-<img src="https://github.com/officialthanox/Documind/blob/main/Profile.jpg.jpeg?raw=true" width="190" alt="Thanojan Sivasuntharam"/>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:F55036,100:6A5ACD&height=4&section=header&animation=fadeIn" width="55%"/>
-
-<br/>
-
-### **Thanojan Sivasuntharam**
-
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=6A5ACD&center=true&vCenter=true&width=680&lines=Aspiring+AI+%2F+ML+Engineer;RAG+Systems+%C2%B7+LLM+Applications+%C2%B7+Applied+ML;Building+AI+systems+designed+to+be+trusted." alt="Typing SVG"/>
-
-🎓 Final-year BSc (Hons) Computer Science with Artificial Intelligence
-<br/>
-🏫 NIBM Sri Lanka · Coventry University (UK) Affiliate
-<br/>
-📍 Based in Jaffna, Sri Lanka
-
-<br/>
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:officialthanox@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nevin-thanox)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/officialthanox/Documind)
-
-[![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-success?style=for-the-badge)](mailto:officialthanox@gmail.com)
-
-</div>
-
-<br/>
-
-I build AI systems designed to be **trusted**, not just demoed. Every project I ship is source-traceable, every confidence score is computed math instead of model guesswork, and every failure mode is handled **on purpose, not by accident.**
-
-> 📝 **Short version, if you're skimming:** the project below — **DocuMind** — was designed and built **end-to-end, solo**: retrieval pipeline, grounding logic, audit trail, and container deployment. **Read it as the interview.**
-
-<div align="right"><a href="#top">⬆️ back to top</a></div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:F55036,100:6A5ACD&height=3&section=header" width="100%"/>
-
 <div align="center">
 
 ### 🚀 FEATURED PROJECT
@@ -57,14 +10,14 @@ I build AI systems designed to be **trusted**, not just demoed. Every project I 
 
 <br/>
 
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](#-tech-stack)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.38-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](#-tech-stack)
-[![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-6A5ACD?style=for-the-badge)](#-tech-stack)
-[![Groq](https://img.shields.io/badge/LLM%20Inference-Groq-F55036?style=for-the-badge)](#-tech-stack)
-[![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#-tech-stack)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](#tech-stack)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.38-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](#tech-stack)
+[![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-6A5ACD?style=for-the-badge)](#tech-stack)
+[![Groq](https://img.shields.io/badge/LLM%20Inference-Groq-F55036?style=for-the-badge)](#tech-stack)
+[![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#tech-stack)
 
 [![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)](#)
-[![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-000000?style=for-the-badge)](#about-the-creator)
+[![Open to Work](https://img.shields.io/badge/Open%20to-AI%20Engineering%20Internships-000000?style=for-the-badge)](#contact)
 
 ### **[▶️ Watch the Full Demo on YouTube](https://youtu.be/kKCgGaGkbi4)**
 
@@ -82,13 +35,13 @@ I build AI systems designed to be **trusted**, not just demoed. Every project I 
 
 | | |
 |---|---|
-| 👋 [About the Creator](#about-the-creator) | 🏗️ [Architecture](#architecture) |
 | ⚡ [At a Glance](#at-a-glance) | ⚙️ [Engineering Decisions](#engineering-decisions) |
 | 📁 [Repository Structure](#repo-structure) | 🛠️ [Skills & Competencies](#skills) |
 | 🧠 [Overview](#overview) | 🧰 [Tech Stack](#tech-stack) |
 | 💼 [Business Value & Impact](#business-value) | 🚀 [Getting Started](#getting-started) |
 | 🎬 [See It In Action](#see-it-in-action) | 📈 [Scaling to Production](#scaling) |
 | 🧩 [The Problem It Solves](#the-problem) | 📬 [Contact](#contact) |
+| 🏗️ [Architecture](#architecture) | |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:F55036,100:6A5ACD&height=3&section=header" width="100%"/>
 
@@ -388,4 +341,3 @@ Then open **http://localhost:8501** — upload a PDF or TXT file and ask it a qu
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A5ACD,100:F55036&height=150&section=footer" width="100%"/>
-
